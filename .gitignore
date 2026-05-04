@@ -1,0 +1,26 @@
+# Secrets — never commit these
+.env
+*.env
+.env*
+
+# Output files (may contain financial data)
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Data files — keep real financial data off GitHub
+*.xlsx
+*.xls
+*.csv
+!tests/fixtures/*.csv
+!tests/fixtures/*.xlsx
+
+# OS
+.DS_Store
